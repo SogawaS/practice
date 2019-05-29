@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <title></title>
+   
+       <body> 
+            <script>  
+           window.prompt("ＯＫとキャンセルと入力");
+           var count;
+           var object  ={ 
+               A :"a",
+               B : "b",
+               C : "c",
+               D : "d",
+               current:"",
+
+                kansu:function (){
+                //関数:funnction(引数１.引数２){処理　returen 戻り値}
+                switch(object.current){
+
+                default :{//最初
+                    count=6;
+                    object.current= object.A;
+                    break;
+                }
+
+                case object.A :{
+                    count=5;
+                    object.current = object.B;
+                    break;
+                }
+                }
+                }
+            }
+            
+                 for(var i=0;i<2;i++){
+                 
+                     
+           object.kansu();
+           //関数呼び出し
+           document.write(object.current+"以外の人数は"+(18-count)+"人<br>");
+
+               }
+
+                window.alert("ＯＫのみ");
+                var hairetu = ["1","2","3"];
+                window.alert(hairetu[0]+hairetu.length);
+
+            
+               
+              
+            
+            
+
+        
+            
+            
+        
+                
+
+            
+        </script>
+        </body>
+
+       
+           
+         
+      
+    
+</head>
+</html>
